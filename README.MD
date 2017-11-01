@@ -2,7 +2,7 @@ Powerline fonts
 ===============
 
 This repository contains pre-patched and adjusted fonts for usage with
-the `Powerline <https://github.com/powerline/powerline>`_ statusline plugin.
+the [Powerline](https://github.com/powerline/powerline) statusline plugin.
 
 Why this fork was made?
 ===============
@@ -33,23 +33,23 @@ Unfortunately, there're not too many fonts with Cyrillic support and works with 
 Installation
 ------------
 
-Run ``./install.sh`` to install all Powerline Fonts or see the documentation_ for details.
-
-.. _documentation: https://powerline.readthedocs.org/en/latest/installation/linux.html#fonts-installation
+Run `./install.sh` to install all Powerline Fonts or see the [documentation](https://powerline.readthedocs.org/en/latest/installation/linux.html#fonts-installation) for details.
 
 Quick installation
 ------------------
 
 You can copy and paste the commands to your terminal. Comments are fine too.
-::
-    # clone
-    git clone https://github.com/powerline/fonts.git --depth=1
-    # install
-    cd fonts
-    ./install.sh
-    # clean-up a bit
-    cd ..
-    rm -rf fonts
+
+<pre>
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+</pre>
 
 
 Font Families
@@ -89,18 +89,13 @@ Font Families
 |Space Mono for Powerline              | Space Mono              | N/A                        | SIL Open Font License, Version 1.1|
 
 iTerm2 users need to set both the Regular font and the Non-ASCII Font in
-"iTerm > Preferences > Profiles > Text" to use a patched font (per `this issue`__).
-
-__ https://github.com/Lokaltog/powerline-fonts/issues/44
+"iTerm > Preferences > Profiles > Text" to use a patched font (per [this issue](https://github.com/Lokaltog/powerline-fonts/issues/44)).
 
 Fontconfig
-----------
+---
 
-In some distributions, Terminess Powerline is ignored by default and must be 
-explicitly allowed. A fontconfig file is provided which enables it. Copy this 
-file from the fontconfig directory to your home folder under 
-``~/.config/fontconfig/conf.d`` (create it if it doesn't exist) and re-run 
-``fc-cache -vf``.
-
-
-
+In some distributions, Terminess Powerline is ignored by default and must be
+explicitly allowed. A fontconfig file is provided which enables it. Copy this
+file from the fontconfig directory to your home folder under
+`~/.config/fontconfig/conf.d` (create it if it doesn't exist) and re-run
+`fc-cache -vf`.
